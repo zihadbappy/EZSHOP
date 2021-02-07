@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import axios from "axios"
-import {
-  Row,
-  Col,
-  Image,
-  ListGroup,
-  Card,
-  Button,
-  Container,
-} from "react-bootstrap"
+import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap"
 import Rating from "../components/Rating"
 
 const ProductScreen = ({ match }) => {
@@ -21,7 +13,7 @@ const ProductScreen = ({ match }) => {
       const { data } = await axios.get(`/api/products/${match.params.id}`)
       setProduct(data)
     }
-  }, [])
+  }, [match])
 
   return (
     <>
