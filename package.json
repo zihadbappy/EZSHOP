@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "EzShop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zihadbappy/EZSHOP.git"
+  },
+  "author": "Zihad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zihadbappy/EZSHOP/issues"
+  },
+  "homepage": "https://github.com/zihadbappy/EZSHOP#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
